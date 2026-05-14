@@ -8,6 +8,7 @@ body {
     font-family: var(--font-main);
     background: var(--color-light);
     color: var(--color-text);
+    overflow-x: hidden;
 }
 
 a {
@@ -22,4 +23,8 @@ img {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
