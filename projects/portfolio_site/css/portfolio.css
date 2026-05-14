@@ -113,3 +113,49 @@
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
 }
+
+.lightbox {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.95);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 2000;
+}
+
+.lightbox:target {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.lightbox img {
+    width: 80%;
+
+    max-width: 900px;
+
+    border-radius: 15px;
+}
+
+.lightbox-close {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    font-size: 3rem;
+
+    color: white;
+}
